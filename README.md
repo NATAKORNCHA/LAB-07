@@ -113,6 +113,20 @@ namespace RandomNumber
 
 1. สร้างตัวแปร Random โดยการมีสุ่มเลข 1 หลัก (0 – 9 )
 
+   using System;
+   namespace RandomNumber
+   {
+     class Program 
+       {
+         static void Main(string[] args)
+          {
+            Random random = new Random();
+            int randomNumber = random.Next(0, 9);
+            Console.WriteLine(randomNumber);
+          }
+       }
+    }
+
 1. สร้างตัวแปรชนิด integer สำหรับรับค่าจากผู้ใช้
 
 1. สร้างตัวแปร boolean โดยเก็บค่าที่ได้จากการเปรียบเทียบตัวเลขในข้อ 1 และ 2
