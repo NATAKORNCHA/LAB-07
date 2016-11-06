@@ -469,19 +469,93 @@ int a = 10,b = 20, x = 5,y = 2;
        z1 = a + b;
        Console.WriteLine("Answer(1) {0:f2}", z1);
  ```
-คำตอบ(1) 30.00
+คำตอบ 30.00
 
 
-2.	x-b
-3.	x*b
-4.	y/a
-5.	b%y
-6.	y+10%x
-7.	a/3*5
-8.	9/2*a
-9.	y%8
-10.	100*x+y%2-a
+
 ```
+ 2.x-b
+     int a = 10,b = 20, x = 5,y = 2;
+     int z1, z2, z3, z4, z5, z6, z7, z8, z9, z10;
+     z2= x - b;
+     Console.WriteLine("Answer(2) {0:f2}", z2);
+```  
+คำตอบ -15.00
+
+```
+3.x*b
+
+     int a = 10,b = 20, x = 5,y = 2;
+     int z1, z2, z3, z4, z5, z6, z7, z8, z9, z10;
+     z3 = x* b;
+    Console.WriteLine("Answer(3) {0:f2}", z3);
+ ```
+คำตอบ 100.00
+
+```
+4.	y/a
+     int a = 10,b = 20, x = 5,y = 2;
+     int z1, z2, z3, z4, z5, z6, z7, z8, z9, z10;
+     z4 = y / a;
+    Console.WriteLine("Answer(4) {0:f2}", z4);
+```
+คำตอบ 0.00 
+
+```
+5.	b%y
+     int a = 10,b = 20, x = 5,y = 2;
+     int z1, z2, z3, z4, z5, z6, z7, z8, z9, z10;
+     z5 = b % y;
+     Console.WriteLine("Answer(5) {0:f2}", z5);
+```
+คำตอบ 0.00
+
+```
+6.	y+10%
+     int a = 10,b = 20, x = 5,y = 2;
+     int z1, z2, z3, z4, z5, z6, z7, z8, z9, z10;
+     z6 = y + 10 % x;
+     Console.WriteLine("Answer(6) {0:f2}", z6);
+```
+คำตอบ 2.00
+
+```
+7.	a/3*5
+     int a = 10,b = 20, x = 5,y = 2;
+     int z1, z2, z3, z4, z5, z6, z7, z8, z9, z10;
+     z7 = a / 3 * 5;
+     Console.WriteLine("Answer(7) {0:f2}", z7);
+```
+คำตอบ 15.00
+
+```
+8.	9/2*a
+     int a = 10,b = 20, x = 5,y = 2;
+     int z1, z2, z3, z4, z5, z6, z7, z8, z9, z10;
+     z8 = 9 / 2 * a;
+     Console.WriteLine("Answer(8) {0:f2}", z8);
+```
+คำตอบ 40.00
+
+```
+9.	y%8
+     int a = 10,b = 20, x = 5,y = 2;
+     int z1, z2, z3, z4, z5, z6, z7, z8, z9, z10;
+     z9 = y % 8;
+     Console.WriteLine("Answer(9) {0:f2}", z9);
+```
+คำตอบ  2.00
+
+```
+10.	100*x+y%2-a
+     int a = 10,b = 20, x = 5,y = 2;
+     int z1, z2, z3, z4, z5, z6, z7, z8, z9, z10;
+     z10 = 100 * x + y % 2 - a;
+     Console.WriteLine("Answer(10) {0:f2}", z10);
+```
+คำตอบ 490.00
+
+
 ##2.2.3. ชนิดข้อมูลเลขทศนิยม (Floating Point and Decimal Types)
 ตัวเลขจำนวนทศนิยม มักจะใช้ในการคำนวณทางวิทยาศาสตร์ เนื่องจากค่าในวิทยาศาสตร์ต้องการความละเอียดสูง หรือมีค่าสูงมากกว่าที่เลขจำนวนเต็มจะเก็บได้
 
