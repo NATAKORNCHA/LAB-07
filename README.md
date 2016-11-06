@@ -263,14 +263,173 @@ namespace thruthTable
 }
 ```
 
+ผลที่ได้คือ 
+
+   <img src="https://github.com/NATAKORNCHA/LAB-07/blob/master/LAB7-4.png?raw=true">
 
 
 
 2. OR
+
+```csharp
+using System;
+namespace thruthTable
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool A, B, Y;
+            Console.WriteLine("      Y = A OR B");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A      B\t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; B = false; Y = A | B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = false; B = true; Y = A | B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = false; Y = A | B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = true; Y = A | B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            Console.WriteLine("-----------------------");
+            Console.ReadKey();
+        }
+    }
+}
+
+```
+ผลที่ได้คือ 
+ <img src="https://github.com/NATAKORNCHA/LAB-07/blob/master/LAB7-5.png?raw=true">
+ 
+
 3. NOT
+
+```csharp
+using System;
+namespace thruthTable
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool A, Y;
+            Console.WriteLine("      Y = A NOT B");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A   \t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; Y = !A;
+            Console.WriteLine(" {0}\t| {1}", A, Y);
+            Console.WriteLine("-----------------------");
+            Console.ReadKey();
+        }
+    }
+}
+```
+ผลที่ได้คือ 
+ <img src="https://github.com/NATAKORNCHA/LAB-07/blob/master/LAB7-6.png?raw=true">
+ 
+ 
 4. NAND
+
+```csharp
+using System;
+namespace thruthTable
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool A, B, Y;
+            Console.WriteLine("      Y = A NAND B");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A      B\t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; B = false; Y = A && B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, !Y);
+            A = false; B = true; Y = A && B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, !Y);
+            A = true; B = false; Y = A && B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, !Y);
+            A = true; B = true; Y = A && B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, !Y);
+            Console.WriteLine("-----------------------");
+            Console.ReadKey();
+        }
+    }
+}
+```
+ผลที่ได้คือ 
+ <img src="https://github.com/NATAKORNCHA/LAB-07/blob/master/LAB7-7.png?raw=true">
+
+ 
 5. NOR
+
+```csharp
+using System;
+namespace thruthTable
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool A, B, Y;
+            Console.WriteLine("      Y = A NOR B");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A      B\t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; B = false; Y = A || B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, !Y);
+            A = false; B = true; Y = A || B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, !Y);
+            A = true; B = false; Y = A || B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, !Y);
+            A = true; B = true; Y = A || B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, !Y);
+            Console.WriteLine("-----------------------");
+            Console.ReadKey();
+        }
+    }
+}
+```
+ผลที่ได้คือ 
+ <img src="https://github.com/NATAKORNCHA/LAB-07/blob/master/LAB7-8.png?raw=true">
+
+ 
 6. Exclusive OR
+
+```csharp
+using System;
+namespace thruthTable
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool A, B, Y;
+            Console.WriteLine("      Y = A XOR B");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A      B\t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; B = false; Y = A ^ B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, !Y);
+            A = false; B = true; Y = A ^ B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, !Y);
+            A = true; B = false; Y = A ^ B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, !Y);
+            A = true; B = true; Y = A ^ B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, !Y);
+            Console.WriteLine("-----------------------");
+            Console.ReadKey();
+        }
+    }
+}
+```
+ผลที่ได้คือ 
+ <img src="https://github.com/NATAKORNCHA/LAB-07/blob/master/LAB7-9.png?raw=true">
+
+ 
+ 
 ```
 
 
