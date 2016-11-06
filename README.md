@@ -461,8 +461,17 @@ public class intergerTest
 
 กำหนด ```a = 10, b = 20, x = 5, y = 2`` 
 ให้เขียนโปรแกรมเพื่อหาผลลัพธ์ของสมการต่อไปนี้
-```
-1.	a+b
+ 
+ ```
+1. a+b
+int a = 10,b = 20, x = 5,y = 2;
+     int z1, z2, z3, z4, z5, z6, z7, z8, z9, z10;
+       z1 = a + b;
+       Console.WriteLine("Answer(1) {0:f2}", z1);
+ ```
+คำตอบ(1) 30.00
+
+
 2.	x-b
 3.	x*b
 4.	y/a
