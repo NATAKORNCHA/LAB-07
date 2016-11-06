@@ -112,28 +112,12 @@ namespace RandomNumber
 ให้เขียนโปรแกรมโดยมีข้อกำหนดดังนี้
 1. สร้างตัวแปร Random โดยการมีสุ่มเลข 1 หลัก (0 – 9 )
 
-   using System;
-   namespace RandomNumber
-   {
-     class Program 
-       {
-         static void Main(string[] args)
-          {
             Random random = new Random();
             int randomNumber = random.Next(0, 9);
             Console.WriteLine(randomNumber);
-          }
-       }
-    }
+     
 2. สร้างตัวแปรชนิด integer สำหรับรับค่าจากผู้ใช้
 
-using System;
-namespace RandomNumber
-{
-    class Program 
-    {
-        static void Main(string[] args)
-        {
             Console.WriteLine("Natakorn 57030176");
             Console.Write("fist :");
             int a = Convert.ToInt32(Console.ReadLine());
@@ -142,9 +126,7 @@ namespace RandomNumber
             Random random = new Random();
             int randomNumber = random.Next(a, b);
             Console.WriteLine("RandomNumber : " + randomNumber);
-        }
-    }
-}
+  
 3. สร้างตัวแปร boolean โดยเก็บค่าที่ได้จากการเปรียบเทียบตัวเลขในข้อ 1 และ 2
 
      Console.WriteLine("piyapath 57030192");
@@ -165,6 +147,8 @@ namespace RandomNumber
 4. ให้พิมพ์ค่าตัวแปร boolean ในข้อ 3 ออกทางหน้าจอ
 
  <img src="https://github.com/NATAKORNCHA/LAB-07/blob/master/LAB7-3.png?raw=true">
+ 
+ 
 ##การเขียนโปรแกรมด้วยตัวดำเนินการทางตรรกะ
 
 ตัวแปรชนิด boolean มักจะถูกใช้เป็นที่เก็บผลที่เกิดจากการดำเนินการทางตรรกะ เช่น AND, OR, NOT เป็นต้น ซึ่งการดำเนินการทางตรรกะจะมีตารางความจริง เป็นตัวบอกผลในการดำเนินการของตัวดำเนินการต่างๆ ดังตัวย่าง
