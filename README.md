@@ -134,14 +134,15 @@ namespace RandomNumber
          int randomNumber1 = random1.Next(0, 100);
     	 Console.WriteLine("RandomNumberOne : "+randomNumber1);
          Console.Write("fist :"); 
-	   int a = Convert.ToInt32(Console.ReadLine());
-	    Console.Write("to :");
-	   int b = Convert.ToInt32(Console.ReadLine()); 
-	   Random random2 = new Random();
-	   int randomNumber2 = random2.Next(a, b);
-	   Console.WriteLine("RandomNumberTwo : " + randomNumber2);
+	 
+        int a = Convert.ToInt32(Console.ReadLine());
+        Console.Write("to :");
+        int b = Convert.ToInt32(Console.ReadLine()); 
+        Random random2 = new Random();
+       int randomNumber2 = random2.Next(a, b);
+       Console.WriteLine("RandomNumberTwo : " + randomNumber2);
  
-        bool c = randomNumber1 > randomNumber2;
+       bool c = randomNumber1 > randomNumber2;
        Console.WriteLine("{0}",c);
      
 4. ให้พิมพ์ค่าตัวแปร boolean ในข้อ 3 ออกทางหน้าจอ
